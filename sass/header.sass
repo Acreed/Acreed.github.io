@@ -1,0 +1,442 @@
+@import "bourbon"
+@import "vars.sass"
+@import "fonts.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.top-menu
+	padding: 0px
+	margin: 0px	
+	position: absolute
+	z-index: 101
+	height: 100px
+	width: 100%
+
+.logo
+	display: none
+	font-family: "GothamProBlack", sans-serif
+	font-size: em(24px)
+	color: #343434
+	display: inline-block
+	text-align: left
+	padding-left: 40px
+	padding-bottom: 10px
+	padding-top: 10px
+	span
+		color: #009ef0
+
+.logo2
+	display: inline-block
+	padding-left: 35px
+	padding-bottom: 5px
+	padding-top: 2px
+	#logo-view
+		width: 130px
+		height: 55px
+		background-position: 100%
+		background-size: 100% 100%
+		background-image: url("../img/menu/logo.min.png")
+.logo3
+	z-index: 101
+	position: absolute
+	padding-left: 20px
+	padding-bottom: 5px
+	padding-top: 12px
+	#logo-view
+		width: 220px
+		height: 36px
+		background-position: 100%
+		background-size: 100% 100%
+		background-image: url("../img/menu/logo2.min.png")
+	
+.menu
+	float: left
+	top: 18px
+	display: inline-block
+	position: absolute
+	line-height: em(18px)
+	a
+		font-family: "GothamProRegular", sans-serif
+		font-size: em(14px)
+		color: #343434
+		&:hover
+			color: #343434
+			opacity: 0.5
+	@media screen and (max-width: 1283px)
+		top: 10px
+
+.menu-shield
+	padding: 0 10px 0 10px
+	width: 60%
+	left: 18%
+	display: inline-block
+	position: absolute
+
+.menu-shield2
+	z-index: 105
+	padding: 0 10px 0 10px
+	width: 60%
+	left: 18%
+	position: absolute
+	@media screen and (max-width: 1300px)
+		left: 20%
+	@media screen and (max-width: 1160px)
+		left: 22%
+	@media screen and (max-width: 1060px)
+		width: 50%
+		left: 24%
+	@media screen and (max-width: 1060px)
+		left: 27%
+		
+.in-menu
+	li
+		padding-top: 5px
+
+.toggleMenu
+	display: none
+	background: #fff
+	padding: 0 15px
+	a
+		font-family: "GothamProRegular", sans-serif
+		font-size: em(14px)
+		color: #343434
+
+
+#ddmenu
+	display: block
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+	background: #fff
+	outline: none
+	li
+		float: left
+		display: block
+		position: relative
+	a
+		display: block
+		padding: 3px 12px
+		text-decoration: none			
+		z-index: 200
+	ul
+		position: absolute
+		top: 25px
+		width: 160px
+		background: #fff
+		margin: 0
+		padding: 7px 0
+		list-style: none
+		border-radius: 3px
+		display: none		
+		z-index: 200
+		border: 1px solid rgba(0, 0, 0, 0.2)
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+	> div
+		> li
+			float: left
+			>
+				a
+					display: block
+
+	img
+		padding-left: 5px
+
+.lang #ddmenu
+			text-align: center
+			li
+				float: left
+				a
+					float: left
+					&:hover
+						color: #343434
+						opacity: 0.5
+			ul
+				width: 60px
+
+#ddmenu ul
+	li
+		width: 100%
+		text-shadow: 1px 1px 0 #fff
+		display: block
+		padding-bottom: 3px
+		width: 100%
+		-webkit-transition: all 0.2s linear
+		-moz-transition: all 0.2s linear
+		-o-transition: all 0.2s linear
+		transition: all 0.2s linear
+		&:hover
+			background: #999999
+
+.soc
+	display: inline-block
+	text-align: right
+	position: absolute
+	right: 0px
+	.soc-cont
+		height: 30px
+		img
+			height: 100%
+			margin-top: -7px
+	
+
+.lang
+	margin-top: 18px
+	margin-right: 135px
+	line-height: em(18px)
+	a
+		font-family: "GothamProRegular", sans-serif
+		font-size: em(14px)
+		color: #343434
+
+.map-container
+	position: absolute
+	top: 60px
+	z-index: 100
+	height: 700px
+	width: 100%
+	padding: 0px
+	margin: 0px
+	iframe
+		height: 100%
+		width: 100%
+	@media screen and (max-width: 850px)
+		height: 400px
+
+.top-cont
+	height: 850px
+	@media screen and (max-width: 850px)
+		height: 550px
+
+.top-ind
+	height: 60px
+
+#btn-menu
+	z-index: 105
+	display: none
+	+ label
+		display: none
+		position: relative
+		height: 20px
+		z-index: 1
+		cursor: pointer
+		&:before
+			margin: 1px
+			padding: 10px 10px 10px 20px
+			content: '\f0c9'
+			display: inline-block
+			font-family: "FontAwesome"
+			font-size: 22px
+			@media screen and (max-width: 370px)
+				padding: 10px 10px 10px 5px
+
+	&:checked + label:before
+		content: '\f00d'
+		color: #fff
+
+.soc-off
+	display: none
+
+@media screen and (max-width: 850px)
+	.soc-off
+		display: inline-block
+	.soc-in
+		padding-top: 360px
+		width: 100%	
+	.menu-in
+		width: 100%	
+		height: 360px
+	.soc
+		display: none
+	#btn-menu
+		+ label
+			display: inline-block
+			+ .menu
+				display: none
+		&:checked + label + .menu
+			display: block
+	.toggleMenu
+		display: block
+	.menu
+		top: 0px
+		width: 100%
+		background: #1f1f1f
+		line-height: em(18px)
+		li
+			width: 200px
+		a
+			font-family: "GothamProRegular", sans-serif
+			font-size: em(14px)
+			color: #fff
+			&:hover
+				color: white
+				opacity: 0.5
+	.menu-shield
+		padding: 0 0 0 0
+		left: 0%
+		width: 100%
+	.menu-shield2
+		padding: 0 0 0 0
+		left: 0%
+		width: 100%
+	.lang
+		margin-right: 130px
+	.logo
+		left: 10%
+		color: #343434
+		width: 90%
+		display: inline-block
+		text-align: center
+		z-index: 100
+		padding-bottom: 10px
+		padding-top: 10px
+	.logo2
+		left: 10%
+		width: 90%
+		text-align: center
+		z-index: 100
+		#logo-view
+			margin: auto
+	.logo3
+		width: 90%
+		text-align: center
+		z-index: 100
+		#logo-view
+			margin: auto
+	#ddmenu
+		padding-top: 55px
+		width: 100%
+		background: #1f1f1f
+		li
+			padding-top: 20px
+			float: none
+		img
+			filter: invert(100%)
+		ul
+			top: 45px
+			width: 160px
+			background: #1f1f1f
+
+		> li.hover > ul, li li.hover ul
+			position: static
+	#ddmenu ul
+		li
+			width: 100%
+			text-shadow: 0px 0px 0 #1f1f1f
+			&:hover
+				background: #565656
+
+	#ddmenu.soc-in 
+			padding-top: 0px
+			padding-bottom: 15px
+			background: #262626
+			padding-right: 10%
+			text-align: center
+			.soc-off
+				width: 100%
+				float: none
+			div
+				img
+					opacity: 0.22
+			li 
+				width: 50%
+				padding-right: 0%
+				ul
+					left: 30%
+					li
+						width: 100%
+	.active
+		display: block
+
+.index-first-sec
+	width: 100%
+	background-image: url("../img/index/bgr.jpg")
+	background-size: cover
+	background-position: 75%
+	background-repeat: no-repeat
+	z-index: 90
+	height: 675px
+	border-bottom: 3px solid #d2d2d2
+	@media screen and (max-width: 850px)
+		z-index: 100
+		.uber
+			width: 100%
+			background-image: url("../img/index/bgr-uber.jpg")
+			z-index: 101
+			opacity: 0.7
+			height: 675px
+			.header1
+				color: #fff
+			.desc
+				color: #fff
+	.uber
+			padding-top: 10%
+	.bluetext
+		font-family: "GothamProBold", sans-serif
+		font-size: em(18px)
+		color: #009ef0
+		padding-top: 20px
+		text-transform: uppercase
+	.header1
+		font-family: "GothamPro", sans-serif
+		font-size: em(48px)
+		color: #353535
+		padding-bottom: 45px
+		line-height: em(20px)
+		text-transform: uppercase
+		letter-spacing: em(2px)
+	.desc
+		font-family: "GothamProRegular", sans-serif
+		font-size: em(18px)
+		color: #929292
+	.link
+		font-family: "GothamProRegular", sans-serif
+		font-size: em(18px)
+		color: #009ef0
+
+
+
+.health-first-sec
+	width: 100%
+	background-image: url("../img/health/bgr-6.jpg")
+	background-size: cover
+	background-position: 50%
+	background-repeat: no-repeat
+	height: 800px
+	padding-top: 180px
+	@media screen and (max-width: 850px)
+		height: 400px
+
+.about-first-sec
+	@media screen and (max-width: 850px)
+		height: 400px
+	width: 100%
+	background-image: url("../img/about/bgr-7.jpg")
+	background-size: cover
+	background-position: 50%
+	background-repeat: no-repeat
+	height: 700px
+	z-index: 100
+	.img
+		display: block
+		padding-top: 321px
+		z-index: 104
+		text-align: center
+		@media screen and (max-width: 850px)
+			padding-top: 171px
+	.uber
+		width: 100%
+		background-image: url("../img/about/bgr-7-uber.jpg")
+		z-index: 101
+		opacity: 0.7
+		height: 700px
+		@media screen and (max-width: 850px)
+			height: 400px
