@@ -24,8 +24,11 @@ a.disabled {
 	margin-bottom: 0px;
 }
 
+.not_wrap{
+	white-space: nowrap;
+}
+
 .index-first {
-	margin-top: 57px;
 	width: 100%;
 	background-image: url("../img/index1.jpg");
 	background-size: cover;
