@@ -71,7 +71,7 @@ a.disabled {
 }
 @media screen and (max-width: 576px) {
 	.index-first {
-		height: 900px;
+		height: 1100px;
 	}
 }
 
@@ -100,6 +100,12 @@ a.disabled {
 .index-info h1 .backcolor {
 	background-color: #f8f9fa;
  }
+ 
+ @media screen and (max-width: 400px) {
+	.index-info h1 {
+		font: normal normal bold 30px/1.4em 'open sans',sans-serif;
+	}
+}
 
 .index-info h5{
 	font: normal normal bold 21px/1.4em "open sans",sans-serif;
