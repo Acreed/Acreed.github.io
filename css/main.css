@@ -1,13 +1,23 @@
 ﻿body {
-	font-family: GothamProRegular,sans-serif;
+	font-family: 'open sans' ,sans-serif;
+
 }
 a.disabled {
 	/* Make the disabled links grayish*/
 	color: black;
 }
 
+.btn{
+	border-radius: 0px;
+	font: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+}
+
 .noborder {
 	border: none;
+}
+
+.italic {
+	font: italic normal normal 26px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
 }
 
 .no-margin-bottom {
@@ -15,20 +25,29 @@ a.disabled {
 }
 
 .index-first {
-	margin-top: 71px;
+	margin-top: 57px;
 	width: 100%;
 	background-image: url("../img/index1.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	box-shadow:0 0 0 400px rgba(0, 0, 0, 0.33) inset;
 	z-index: 90;
 	height: 800px;
-	border-bottom: 3px solid #d2d2d2;
+	color: white;
 }
 .index-first .uber {
-	padding-top: 10%;
+	padding-top: 15%;
+	/*width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 100;
+	opacity: 0.2;*/
 }
+.index-first li{
+	border-bottom: 1px solid #d9d9d9;
+ }
 
 .index-first .list-group-item{
 	background: none;
@@ -36,6 +55,7 @@ a.disabled {
 
 .index-first i{
 	font-size: 2em;
+	color: white;
 }
 
 @media screen and (max-width: 850px) {
@@ -50,6 +70,37 @@ a.disabled {
 	.index-first {
 		height: 900px;
 	}
+}
+
+.index-info .hl1 {
+	box-sizing:border-box;
+	width:90%;
+	border-top:1px solid rgba(199, 199, 199, 1);
+	height:0;
+	position: relative;
+	margin: 10px 0px 10px 0px;
+	left: 29px;
+	top: 55px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+}
+
+.index-info h1 {
+	position: relative;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+	font: normal normal bold 60px/1.4em 'open sans',sans-serif;
+}
+
+.index-info h1 .backcolor {
+	background-color: #FFFFFF;
+ }
+
+.index-info h5{
+	font: normal normal bold 21px/1.4em "open sans",sans-serif;
+	line-height: 1.2em;
 }
 
 .index-contact-form h1 {
@@ -94,12 +145,8 @@ a.disabled {
 
 .index-map-container {
 	z-index: 100;
-	height: 400px;
-	width: 80%;
-	padding: 0px;
-	margin-bottom: 60px;
-	margin-left: 10%;
-	margin-right: 10%;
+	height: 500px;
+	width: 100%;
 }
 
 .map-container iframe {
