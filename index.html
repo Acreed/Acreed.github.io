@@ -40,34 +40,34 @@
 
     <div id="page-preloader"></div>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 	  <a class="navbar-brand" href="#"><small>Ильинский районный </small> <br> <strong>ДОМ КУЛЬТУРЫ</strong></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 
-	  <div class="collapse navbar-collapse" id="navbarsExample04">
+	  <div class="collapse navbar-collapse">
 		<ul class="navbar-nav mr-auto">
 		  <li class="nav-item active">
 			<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Коллективы</a>
+			<a class="nav-link" href="collectives.html">Коллективы</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Фестиваль</a>
+			<a class="nav-link" href="festival.html">Фестиваль</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Афиша</a>
+			<a class="nav-link" href="#1">Афиша</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Документация</a>
+			<a class="nav-link" href="documents.html">Документация</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link  not_wrap" href="#">Архив мероприятий</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Контакты</a>
+			<a class="nav-link" href="#2">Контакты</a>
 		  </li>
 		</ul>
         <nav>
@@ -99,7 +99,7 @@
                                             <h3>На краю океана / Марина Краснова</h3>
                                         </div>
                                         <div class="col-sm-2 mt-2">
-                                            <a href="#" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
+                                            <a href="tickets.html" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@
                                             <h3>На краю океана / Марина Краснова</h3>
                                         </div>
                                         <div class="col-sm-2 mt-2">
-                                            <a href="#" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
+                                            <a href="tickets.html" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                             <h3>На краю океана / Марина Краснова</h3>
                                         </div>
                                         <div class="col-sm-2 mt-2">
-                                            <a href="#" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
+                                            <a href="tickets.html" class="btn btn-outline-light" role="button" aria-pressed="true">Билеты</a>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                         </ul>
 
                         <div class="d-block text-center mt-3">
-                            <a href="#" class="disabled">
+                            <a href="#1" class="disabled">
                                 <i class="fas fa-angle-down"></i>
                             </a>
                         </div>
@@ -154,13 +154,28 @@
             </div>
         </section>
 
-        <section class="jumbotron index-about">
+        <section class="index-about bg-light py-5 mb-5">
             <div class="container">
-                <div class="p-3 p-md-5 text-white rounded bg-dark">
-                    <div class="col-md-6 px-0">
-                        <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-                        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-                        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                <div data-border-width="1px" class="hl1b"></div>
+                <h1 class="text-center text-muted mb-5 hl1">
+                    <span class="backcolor">О нас</span>
+                </h1>
+                <div class="row p-3 p-md-5">
+                    <div class="col-md-5 px-0">
+                        <h4 class="hl4">Миссия</h4>
+                        <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.
+                            Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
+                    </div>
+                    <div class=" offset-2 col-md-5 px-0 mb-5">
+                        <img class="img-fluid" src="img/about1.jpg">
+                    </div>
+                    <div class="col-md-5 px-0">
+                        <h4 class="hl4">История</h4>
+                        <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
+                    </div>
+                    <div class=" offset-2 col-md-5 px-0">
+                        <h4 class="hl4">Меценаты</h4>
+                        <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
                     </div>
                 </div>
             </div>
@@ -178,12 +193,12 @@
             </div>
         </section>
 
-        <section class="index-info py-5 my-5">
-            <div class="album bg-light">
+        <section class="index-info py-5 my-5 bg-light">
+            <div class="album">
                 <div class="container">
-                    <div data-border-width="1px" class="hl1"></div>
-                    <h1 class="text-center text-muted mb-5">
-                        <span class="backcolor">Все мероприятия</span>
+                    <div data-border-width="1px" class="hl1b"></div>
+                    <h1 class="text-center text-muted mb-5 hl1"><a name="1">
+                        <span class="backcolor">Все мероприятия</span></a>
                     </h1>
                     <div class="row">
                         <div class="col-md-4">
@@ -192,7 +207,7 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -204,7 +219,7 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -216,44 +231,7 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
-                                        <small class="text-muted">пн, 24 июля</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                                <div class="card-body">
-                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
-                                        <small class="text-muted">пн, 24 июля</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                                <div class="card-body">
-                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
-                                        <small class="text-muted">пн, 24 июля</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                                <div class="card-body">
-                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -266,7 +244,7 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -278,7 +256,7 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -290,7 +268,44 @@
                                 <div class="card-body">
                                     <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="#" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <small class="text-muted">пн, 24 июля</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                                <div class="card-body">
+                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <small class="text-muted">пн, 24 июля</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                                <div class="card-body">
+                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
+                                        <small class="text-muted">пн, 24 июля</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169b7a70beb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169b7a70beb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                                <div class="card-body">
+                                    <h5 class="card-text text-center">На краю океана / Марина Краснова</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href="tickets.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Билеты</a>
                                         <small class="text-muted">пн, 24 июля</small>
                                     </div>
                                 </div>
@@ -303,7 +318,7 @@
 
         <section class="index-contact-form py-5 my-5">
             <div class="container">
-                <h3 class="text-center text-muted mt-2 mb-5 italic">Свяжитесь с нами</h3>
+                <h3 class="text-center text-muted mt-2 mb-5 italic"><a name="2">Свяжитесь с нами</a></h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="contact-info">

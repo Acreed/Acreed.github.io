@@ -5,6 +5,7 @@
 a.disabled {
 	/* Make the disabled links grayish*/
 	color: black;
+	text-decoration: none;
 }
 
 .btn{
@@ -26,6 +27,64 @@ a.disabled {
 
 .not_wrap{
 	white-space: nowrap;
+}
+
+.backcolor {
+	background-color: #f8f9fa;
+}
+
+.backcolor-white {
+	 background-color: #fff;
+ }
+
+.first-pad{
+	padding-top: 130px;
+}
+
+.hl1b {
+	box-sizing:border-box;
+	width:90%;
+	border-top:1px solid rgba(199, 199, 199, 1);
+	height:0;
+	position: relative;
+	margin: 10px 0px 10px 0px;
+	left: 29px;
+	top: 55px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+}
+
+.hl1 {
+	position: relative;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+	font: normal normal bold 60px/1.4em 'open sans',sans-serif;
+}
+
+.hl4 {
+	font: normal normal bold 32px/1.4em 'open sans',sans-serif;
+}
+
+.pl1 {
+	font: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+}
+
+.footer {
+	color: #606060;
+	font-family: OpenSans,sans-serif;
+	font-size: .75em;
+	margin-bottom: 65px;
+	margin-top: 140px;
+	opacity: .44;
+	text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+	.hl1 {
+		font: normal normal bold 30px/1.4em 'open sans',sans-serif;
+	}
 }
 
 .index-first {
@@ -75,38 +134,6 @@ a.disabled {
 	}
 }
 
-.index-info .hl1 {
-	box-sizing:border-box;
-	width:90%;
-	border-top:1px solid rgba(199, 199, 199, 1);
-	height:0;
-	position: relative;
-	margin: 10px 0px 10px 0px;
-	left: 29px;
-	top: 55px;
-	grid-area: 1 / 1 / 2 / 2;
-	justify-self: start;
-	align-self: start;
-}
-
-.index-info h1 {
-	position: relative;
-	grid-area: 1 / 1 / 2 / 2;
-	justify-self: start;
-	align-self: start;
-	font: normal normal bold 60px/1.4em 'open sans',sans-serif;
-}
-
-.index-info h1 .backcolor {
-	background-color: #f8f9fa;
- }
- 
- @media screen and (max-width: 400px) {
-	.index-info h1 {
-		font: normal normal bold 30px/1.4em 'open sans',sans-serif;
-	}
-}
-
 .index-info h5{
 	font: normal normal bold 21px/1.4em "open sans",sans-serif;
 	line-height: 1.2em;
@@ -142,16 +169,6 @@ a.disabled {
 	width: 90px;
 }
 
-.footer {
-	color: #606060;
-	font-family: OpenSans,sans-serif;
-	font-size: .75em;
-	margin-bottom: 65px;
-	margin-top: 140px;
-	opacity: .44;
-	text-align: center;
-}
-
 .index-map-container {
 	z-index: 100;
 	height: 500px;
@@ -167,4 +184,65 @@ a.disabled {
 	.map-container {
 		height: 400px;
 	}
+}
+
+.collective-carousel{
+}
+.carousel-inner h3 {
+	background-color: rgba(20, 49, 68, 0.6);
+	padding: 20px;
+	animation: anime-H3 1.3s ease-out;
+	color: #fff;
+}
+
+.carousel-inner p {
+	font-size: 18px;
+	background-color: rgba(30,29,29, 0.6);
+	padding: 20px;
+	animation: anime-P 1.6s ease-out;
+}
+
+
+@media screen and (max-width: 991px) {
+	.carousel-inner h3 {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	.carousel-inner p {
+		font-size: 14px;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+}
+
+@keyframes anime-H3 {
+	from {
+		opacity: 0;
+		transform: translateX(-2000px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes anime-P {
+	from {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.doc-first i{
+	font-size: 50px;
+
+}
+
+.tickets-first .back-tick{
+	font: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
 }
