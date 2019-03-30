@@ -75,10 +75,12 @@ a.disabled {
 	color: #606060;
 	font-family: OpenSans,sans-serif;
 	font-size: .75em;
-	margin-bottom: 65px;
-	margin-top: 140px;
-	opacity: .44;
+	padding-bottom: 25px;
+	padding-top: 25px;
 	text-align: center;
+}
+.footer a {
+	color: #606060;
 }
 
 .index-first {
@@ -114,6 +116,16 @@ a.disabled {
 	color: white;
 }
 
+.index-first h2{
+	font: normal normal bold 40px/26px "open sans",sans-serif;
+	margin-top: 10px;
+ }
+
+.index-first h3{
+	margin-top: 7px;
+	font: normal normal bold 21px/26px "open sans",sans-serif;
+  }
+
 .map-container iframe {
 	height: 100%;
 	width: 100%;
@@ -129,10 +141,17 @@ a.disabled {
 	.map-container {
 		height: 400px;
 	}
+	.hl1 {
+		font-size: 50px;
+	}
 }
 @media screen and (max-width: 576px) {
 	.index-first {
 		height: 1100px;
+	}
+	.hl1b {
+		width: 100%;
+		left: 0;
 	}
 }
 
