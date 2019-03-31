@@ -39,10 +39,10 @@ a.disabled {
  }
 
 .first-pad{
-	 padding-top: 130px;
+	 padding-top: 180px;
  }
 .first-pad2{
-	padding-top: 200px;
+	padding-top: 300px;
 }
 
 .hl1b {
@@ -162,7 +162,6 @@ a.disabled {
 	height: 100%;
 	width: 100%;
 }
-
 @media screen and (max-width: 850px) {
 	.first {
 		z-index: 100;
@@ -177,16 +176,26 @@ a.disabled {
 		font-size: 50px;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.index-first {
+		height: 900px;
+	}
+	.festival-first{
+		height: 600px;
+	}
+}
+
 @media screen and (max-width: 576px) {
+	.hl1b {
+		width: 100%;
+		left: 0;
+	}
 	.index-first {
 		height: 1100px;
 	}
 	.festival-first{
-		height: 800px;
-	}
-	.hl1b {
-		width: 100%;
-		left: 0;
+		height: 700px;
 	}
 }
 
