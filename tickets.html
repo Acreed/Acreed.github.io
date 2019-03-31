@@ -88,23 +88,89 @@
                 <span class="backcolor">Мероприятия</span>
             </h1>
             <a class="disabled back-tick" href="index.html#1"><i class="fas fa-chevron-left"></i> Назад</a>
-            <div class="row p-3 p-md-5">
-                <div class="col-md-5 px-0">
-                    <h4 class="hl4">Миссия</h4>
-                    <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.
-                        Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
+            <div class="row">
+                <div class="col-md-12 pt-5 text-center tickets-name">
+                    <p class="my-3 text-muted">пн, 24 июля</p>
+                    <h2 class="my-3">На краю океана / Марина Краснова</h2>
+                    <a href="#1" class="btn btn-outline-dark my-3" role="button" aria-pressed="true">Билеты</a>
                 </div>
-                <div class=" offset-2 col-md-5 px-0 mb-5">
-                    <img class="img-fluid" src="img/about1.jpg">
+                <div class="col-md-12 pt-5">
+                    <img src="img/index3.jpg" width="100%" height="400px" alt="">
                 </div>
-                <div class="col-md-5 px-0">
-                    <h4 class="hl4">История</h4>
-                    <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
+                <div class="col-sm-12 col-md-10 offset-md-2 pt-5" >
+                    <h3 class="text-muted">Любой коллектив</h3>
+                    <p>
+                        24 июл. 2023 г., 19:00 – 31 июл. 2023 г., 23:00<br>
+                        ул. Арбат, 1, ул. Арбат, 1, Москва, Россия, 119019
+                    </p>
                 </div>
-                <div class=" offset-2 col-md-5 px-0">
-                    <h4 class="hl4">Меценаты</h4>
-                    <p class="pl1 my-3">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям о себе.</p>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-4 offset-2 pb-3 border-bottom border-gray ">
+                    <h3 class="text-muted"><a name="1">Билеты</a></h3>
                 </div>
+                <div class="col-2 pb-3 border-bottom border-gray ">
+                    <p>Цена</p>
+                </div>
+                <div class="col-2 pb-3 border-bottom border-gray ">
+                    <p>Кол-во</p>
+                </div>
+                <div class="col-1 pb-3 border-bottom border-gray ">
+                    <p>Итого</p>
+                </div>
+                <div class="co-1 pb-3">
+                </div>
+
+                <div class="col-4 offset-2 py-5 border-bottom border-gray ">
+                    <p>Обычный билет</p>
+                </div>
+                <div class="col-2 py-5 border-bottom border-gray ">
+                    <p>RUB 25</p>
+                </div>
+                <div class="col-2 py-5 border-bottom border-gray ">
+                    <p>
+                        <button type="button" class="btn btn-link" id="min-btn" onclick="inc(-1)"><i class="fas fa-minus"></i></button>
+                        <span id="count"></span>
+                        <button type="button" class="btn btn-link" id="plus-btn" onclick="inc(1)"><i class="fas fa-plus"></i></button>
+                    </p>
+                </div>
+                <div class="col-1 py-5 border-bottom border-gray ">
+                    <p>руб. <span id="cost"></span></p>
+                </div>
+                <div class="col-1 py-5">
+                </div>
+
+                <div class="col-4 offset-2 py-5 border-bottom border-gray ">
+                    <p>Студенческий</p>
+                </div>
+                <div class="col-2 py-5 border-bottom border-gray ">
+                    <p>RUB 15</p>
+                </div>
+                <div class="col-2 py-5 border-bottom border-gray ">
+                    <p>
+                        <button type="button" class="btn btn-link" id="min-btn2" onclick="inc2(-1)"><i class="fas fa-minus"></i></button>
+                        <span id="count2"></span>
+                        <button type="button" class="btn btn-link" id="plus-btn2" onclick="inc2(1)"><i class="fas fa-plus"></i></button>
+                    </p>
+                </div>
+                <div class="col-1 py-5 border-bottom border-gray ">
+                    <p>руб. <span id="cost2"></span></p>
+                </div>
+                <div class="col-1 py-5">
+                </div>
+
+                <div class="col-4 offset-6 py-4">
+                    <h5>Итого</h5>
+                </div>
+                <div class="col-2 py-4">
+                    <h5>руб. <span id="fincost"></span></h5>
+                </div>
+                <div class="col-5 offset-6">
+                    <button class="btn btn-outline-dark btn-lg btn-block" type="button">Оформить заказ</button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -140,6 +206,7 @@
         {"src" : "libs/masonry/masonry.pkgd.min.js", "async" : false}
     ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">$(window).on('load', function () {
